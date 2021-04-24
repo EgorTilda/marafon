@@ -23,19 +23,20 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 100px;
   background-color: #1B3738;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 .main__content {
   width: 50%;
   height: auto;
-  margin-top: 0px;
+  margin: 50px 0;
   padding: 20px;
 }
 
@@ -102,6 +103,16 @@ html, body {
   padding: 30px;
   text-align: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about__item-avatar {
@@ -141,7 +152,7 @@ html, body {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .main__content {
     width: 100%;
   }
